@@ -1,0 +1,29 @@
+#header {
+  display: flex;
+  align-items: center;
+  background-color: #EEE;
+  height: 3rem;
+  cursor: pointer;
+  transition: 500ms;
+}
+
+#header:before {
+  content: '‣';
+  font-size: 2rem;
+  padding: 0 1rem;
+}
+
+#header.opened:before {
+  transform: rotate(90deg);
+}
+
+#header:hover {
+  background-color: #DDD;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: #DEDEDE;
+}
