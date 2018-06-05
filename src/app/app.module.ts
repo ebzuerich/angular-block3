@@ -4,11 +4,13 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { DetailsComponent } from './components/details/details.component';
+import { CourseFormComponent } from './components/course-form/course-form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DetailsComponent
+    DetailsComponent,
+    CourseFormComponent
   ],
   imports: [
     BrowserModule,
