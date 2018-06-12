@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
 import { Course } from '../../course';
 
 @Component({
@@ -6,7 +6,7 @@ import { Course } from '../../course';
   templateUrl: './course-form.component.html',
   styleUrls: ['./course-form.component.css']
 })
-export class CourseFormComponent implements OnInit {
+export class CourseFormComponent {
 
   @Output() addCourse = new EventEmitter<Course>();
 
@@ -16,10 +16,8 @@ export class CourseFormComponent implements OnInit {
     this.course = new Course();
   }
 
-  public ngOnInit() {
-  }
-
   public onSubmit() {
+    this.course.start = new Date(this.course.start);
     this.addCourse.emit(this.course);
   }
 

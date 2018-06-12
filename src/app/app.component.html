@@ -1,4 +1,6 @@
 <div>
   <app-course-form (addCourse)='addCourse($event)'></app-course-form>
-  <app-details *ngFor="let course of courses" [title]='course.title'><span [innerHTML]='course.description'></span></app-details>
+  <app-details *ngFor="let course of courses" [title]='course.title' [subtitle]='course.start | date:"fullDate"'>
+    <span [innerHTML]='course.description'></span>
+  </app-details>
 </div>
