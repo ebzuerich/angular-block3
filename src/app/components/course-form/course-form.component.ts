@@ -17,8 +17,9 @@ export class CourseFormComponent {
   }
 
   public onSubmit() {
-    this.course.start = new Date(this.course.start);
+    this.course.start = this.course.start ? new Date(this.course.start) : this.course.start;
     this.addCourse.emit(this.course);
+    this.course = new Course();
   }
 
 }
