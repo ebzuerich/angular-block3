@@ -7,6 +7,7 @@ import { DetailsComponent } from './components/details/details.component';
 import { CourseFormComponent } from './components/course-form/course-form.component';
 import { DefaultPipe } from './pipes/default.pipe';
 import { HighlightDirective } from './directives/highlight.directive';
+import { InputDateParserDirective } from './directives/input-date-parser.directive';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { HighlightDirective } from './directives/highlight.directive';
     DetailsComponent,
     CourseFormComponent,
     DefaultPipe,
-    HighlightDirective
+    HighlightDirective,
+    InputDateParserDirective
   ],
   imports: [
     BrowserModule,
