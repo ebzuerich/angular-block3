@@ -8,3 +8,7 @@ div {
 div > * {
   width: 100%;
 }
+
+app-details {
+  margin-bottom: 1rem;
+}

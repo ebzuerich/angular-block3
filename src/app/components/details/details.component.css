@@ -1,16 +1,29 @@
 #header {
   display: flex;
   align-items: center;
+  justify-content: space-around;
   background-color: #EEE;
   height: 3rem;
   cursor: pointer;
   transition: 500ms;
+  user-select: none;
 }
+
+.title {
+  width: 100%;
+}
+
+.subtitle {
+  margin: 0 1rem;
+  white-space: nowrap;
+}
+
 
 #header:before {
   content: '‣';
   font-size: 2rem;
   padding: 0 1rem;
+  transition: 200ms;
 }
 
 #header.opened:before {
